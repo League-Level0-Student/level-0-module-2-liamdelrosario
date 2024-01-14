@@ -23,7 +23,8 @@ public class SafeCracker {
 	public static void main(String[] args) {
 		new SafeCracker().crackTheSafe();
 	}
-
+	
+	
 	void crackTheSafe() {
 		/*
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
@@ -34,9 +35,12 @@ public class SafeCracker {
 
 	 void tryCode(int guess) {
 		System.out.println("trying " + guess);
-
+		int loop=0;
 		int secretCode = 9999999 - wekncrzpasfdkjhcfjse;
-
+		while(loop<=yourCurrentAge) {
+			System.out.println(loop);
+			loop+=1;
+				}
 		if (guess == secretCode) {
 			JOptionPane.showMessageDialog(null, "Congratulations! You cracked the safe with " + guess);
 			playTheSoundOfSuccess();

@@ -1,5 +1,6 @@
 package _01_random._6_lottery_numbers;
 
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
 
@@ -9,23 +10,23 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-public class lottery {
+public class lottery implements ActionListener {
 
+	public static void main(String[] args) {
 	
-		
-			
-		
+			new _01_random._6_lottery_numbers.lottery().setup();
+	}
 	
-	 void setup() {
+	   void setup() {
 		JFrame frame=new JFrame();
 		JPanel panel= new JPanel();
 		JLabel label;
 		JButton boise = new JButton();
-		boise.addActionListener((ActionListener) this);
+		boise.addActionListener(this);
 		frame.add(panel);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		JOptionPane.showMessageDialog(null,"guess the numbers");
+		JOptionPane.showMessageDialog(null,"heres the numbers");
 		
 		for (int i=0; i<6; i++) {
 			Random ran = new Random();
@@ -38,5 +39,11 @@ public class lottery {
 	}
 		frame.setVisible(true);
 		frame.pack();
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }
