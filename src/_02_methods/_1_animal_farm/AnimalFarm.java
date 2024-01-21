@@ -31,7 +31,8 @@ public static void main(String[] args) {
 		
 		/* 2. Make it so that the user can keep entering new animals. */
 		while(true) {
-			String input =JOptionPane.showInputDialog("what animal do you wnat in the farm I will give them there noise and it would be a nice experience");
+					String input =JOptionPane.showInputDialog("what animal do you wnat in the farm I will give them there noise and it would be a nice experience");
+
 		
 		if(input.equals("cow")) {
 			playNoise(mooFile);
