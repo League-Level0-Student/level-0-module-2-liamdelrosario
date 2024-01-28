@@ -13,18 +13,26 @@ void setup() {
      ellipse(70, 119, 100, 30);
      ellipse(300, 60, 100, 30);
      ellipse(297, 350, 100, 30);
+     textSize(44);
+     text("pop you",140,100);
+     textSize(22);
+     text("we have disase lik coron 19 viruos",50,290);
+     
 }
 
 void draw() {
 
 /* Write code here that uses the drawMole method to put a mole in each of the holes */
 
-
+  drawMole(200,185);
+  drawMole(70,104);
+  drawMole(300,45);
+  drawMole(297,335);
 }
 
 void drawMole(int moleX, int moleY) {
      noStroke();
-     fill(125, 93, 43);
+     fill(303, 76, 99);
      ellipse(moleX, moleY, 60, 60); // face
      fill(255, 237, 209);
      ellipse(moleX, moleY+10, 33, 28); 
