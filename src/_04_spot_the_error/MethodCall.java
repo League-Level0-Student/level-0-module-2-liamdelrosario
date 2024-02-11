@@ -9,8 +9,14 @@ public class MethodCall {
 	public static void main(String[] args) {
 		
 	}
-	
+	String aMessage = ("hello world");
 	static void printMessage(String aMessage) {
 		System.out.println(aMessage);
+	
+		
+		
 	}
+	
+		
+	
 }
